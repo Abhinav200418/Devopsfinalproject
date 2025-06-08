@@ -1,4 +1,7 @@
 Flask
 flask-cors
 pymongo
-python-dotenv
+prometheus-client
+opentelemetry-sdk
+opentelemetry-exporter-otlp
+opentelemetry-instrumentation-flask
