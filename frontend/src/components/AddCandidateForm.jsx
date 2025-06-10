@@ -27,7 +27,7 @@ const AddCandidateForm = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/add-candidate', {
+      const response = await fetch('http://3.110.136.152:5000/api/add-candidate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(candidateData)
