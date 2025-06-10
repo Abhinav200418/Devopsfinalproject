@@ -5,7 +5,6 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from pymongo import MongoClient
 import certifi
-
 app = Flask(__name__)
 CORS(app)
 
@@ -79,4 +78,4 @@ def home():
     return "✅ Backend is running with MongoDB Atlas and RCA support!"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
