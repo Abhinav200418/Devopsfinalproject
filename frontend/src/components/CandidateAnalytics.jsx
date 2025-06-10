@@ -40,7 +40,7 @@ const CandidateAnalytics = () => {
   });
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/get-candidates')
+    fetch('http://3.110.136.152:5000/api/get-candidates')
       .then(response => response.json())
       .then(data => {
         setCandidates(data);
