@@ -87,7 +87,7 @@ const CandidateAnalytics = () => {
       rating: parseFloat(newCandidate.rating)
     };
 
-    fetch('http://localhost:5000/api/add-candidate', {
+    fetch('http://3.110.136.152:5000/api/add-candidate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(candidate)
