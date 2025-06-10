@@ -1,17 +1,10 @@
-# Use Python base image
-FROM python:3.9-slim
+FROM python:3.10-slim
 
-# Set working directory inside container
 WORKDIR /app
 
-# Copy backend code
-COPY . .
-
-# Install Python packages
+COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose Flask port
-EXPOSE 5000
+COPY . .
 
-# Run the Flask app
 CMD ["python", "app.py"]
